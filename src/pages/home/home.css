@@ -1,0 +1,559 @@
+
+.main__header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+
+.header__left{
+  margin-top: 5rem;
+}
+
+.header__left h2{
+  margin-bottom: 2rem;
+}
+
+.header__left p{
+  color: var(--color-primary-500);
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+/*-----------------BOXTREE-------------*/
+.box-tree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 5rem;
+
+}
+
+.boxtree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.boxtree:hover{
+    box-shadow: -2rem 2rem 5rem rgba(240, 71, 189, 0.4);
+}
+
+.boxtree p{
+    margin-left: 2rem;
+}
+
+.boxtree:nth-child(2){
+    background: var(--color-primary-200);
+}
+
+
+
+
+
+
+/*--------------------FAQS-------------------------*/
+/*.faqs{
+  background: red;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* .faq{
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+} 
+
+.faq{
+  width: 50%;
+}
+
+.faq__image img{
+  width: 50%;
+  height: 50%;
+}
+
+.faq__image{
+  width: 70%;
+}*/
+
+.faqs{
+  margin: 8rem 0 2rem 0;
+}
+
+.faqs__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem 2rem;
+  align-items: flex-start;
+}
+
+.faq{
+  background: var(--color-primary-100); 
+  box-shadow: -2rem 2rem 5rem rgba(240, 71, 189, 0.4);
+  border-radius: 2rem 0 2rem 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+.faq__icon{
+  background: transparent;
+  color: var(--color-primary-400);
+  font-size: 1.5rem;
+}
+
+.faq p{
+  margin-top: 1rem;
+  color: white;
+}
+
+
+.faq__image{
+  background: black;
+}
+
+.faq__image img{
+  height: 50%;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------FLOWERS---------------------*/
+.flowers-container h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.flowers-wrapper p{
+    margin-bottom: 1.5rem;
+}
+
+.flowers-icon{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+.flowers-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr)
+}
+
+
+
+/*-----------------------TESTIMONIALS---------------*/
+.testimonials{
+    width: auto;
+    height: auto;
+    margin-inline: auto;
+   
+}
+
+.div__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+ .card.testimonials{
+    position: relative; 
+    text-align: left;
+    margin-top: 2rem;
+    background: linear-gradient(var(--color-primary-100), var(--color-primary-200), var(--color-primary-400));
+} 
+
+.testimonial__avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+    transition: var(--transition);
+}
+
+.testimonial:hover .testimonial__avatar{
+    border-radius: 50%;
+    border-color: var(--color-primary-400);
+}
+
+.testimonial__quote{
+    font-style: italic;
+    margin: 1rem 0 2rem;
+}
+
+.card small.testimonial__title{
+    margin-top: 0.3rem;
+}
+
+.testimonials__btn-container{
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials__btn{
+    background: transparent;
+    cursor: pointer;
+}
+
+.testimonials__btn svg{
+    fill: var(--color-primary-400);
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.testi__title{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.image__big{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-bottom: 5rem;
+    box-shadow: -2rem 2rem 5rem rgba(240, 71, 189, 0.4);
+}
+
+
+
+
+
+/*---------------------FOOTER--------------------*/
+footer{
+    background: var(--color-primary-200);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+}
+
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    color: white;
+}
+
+.footer__container article p{
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.footer__container article h4{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.footer__container a{
+    color: white;
+}
+
+.footer__socials{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+}
+
+.footer__socials a{
+    background: white;
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+.footer__socials a svg{
+    color: var(--color-primary-400);
+}
+
+.footer__socials a:hover{
+    border-color: var(--color-gray-100);
+    background: transparent;
+}
+
+.footer__copyright{
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid white;
+    margin-top: 5rem;
+}
+
+
+
+/*--------------MEDIA QUERY (tablet screen)----------------*/
+@media screen and (max-width: 1024px){
+
+  .header__left{
+    margin-top: 3rem;
+  }
+
+  .header__left h2{
+    font-size: 1.5rem;
+  }
+  
+  .header__left p{
+    font-size: 0.9rem;
+  }
+
+  .btn.lg{
+    padding: 1rem;
+  }
+
+
+
+
+  /*flowers*/
+  .flowers-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .flowers-wrapper p{
+    font-size: 0.85rem;
+  }
+
+  .flowers-container h1{
+    font-size: 2.5rem;
+  }
+
+  /*BOXTREE*/
+  .box-tree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .boxtree p{
+    font-size: 0.75rem;
+  }
+
+
+  /*FAQ*/
+  .faqs{
+    margin-top: 5rem 0 12rem 0;
+  }
+
+  .faqs__wrapper{
+    grid-template-columns: 1fr;
+    gap: 0rem 0rem;
+  }
+
+  /*TESTIMONIAL*/
+  .testi__title{
+    font-size: 2.5rem;
+  }
+
+  .card.testimonials{
+    width: auto;
+    height: auto;
+    place-items: center;
+    margin-inline: auto;
+  }
+
+  .image__big img{
+    height: auto;
+  }
+
+  .testimonial__quote{
+    font-size: 0.85rem;
+  }
+
+  .footer__container{
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+    
+}
+
+
+/*-------------------MEDIA QUERY (mobile screen)---------------*/
+@media screen and (max-width: 600px){
+
+  .main__header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header__left{
+    margin-bottom: 3rem;
+  }
+
+
+    /*FLOWERS*/
+    .flowers-container h2{
+        font-size: 2rem;
+    }
+
+    .flowers-container h1{
+      margin-top: 10rem;
+    }
+
+    .title__container{
+      margin-top: 10rem;
+    }
+
+    .flowers-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+      }
+
+      .header__container{
+        width: auto;
+        height: 20rem;
+      }
+
+      .header__content h2{
+        font-size: 1.5rem;
+      }
+
+      .flowers-header .btn__font{
+        font-size: 0.85rem;
+      }
+
+      .flowers-wrapper .btn{
+        padding: 0.2rem;
+      }
+
+      .header{
+        border-bottom: none;
+        border-top: none;
+      }
+
+
+      /*FAQ*/
+      .faq p{
+        font-size: 0.85rem;
+      }
+
+      .box-tree{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .card.boxtree{
+        margin-bottom: none;
+        margin-top: -2rem;
+        gap: 1rem
+      }
+
+      .card.boxtree{
+        width: auto;
+        height: auto;
+      }
+
+      .boxtree span{
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+
+      .boxtree p{
+        margin-top: -1rem;
+      }
+
+
+      /*TESTIMONIAL*/
+      .testi__title{
+        font-size: 1.5rem;
+      }
+
+      .div__content{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .image__big{
+        width: auto;
+      }
+
+      .card.testimonials{
+        width: auto;
+        height: auto;
+        place-items: center;
+      }
+
+      .testimonial__quote{
+        margin-top: 0rem;
+      }
+
+      /*FOOTER*/
+   footer{
+    margin-top: 7rem;
+}
+
+.footer__container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.footer__container article{
+    align-items: center;
+}
+
+.footer__container article p{
+    text-align: center;
+}
+
+
+
+    
+}
